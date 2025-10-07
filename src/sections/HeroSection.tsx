@@ -76,43 +76,15 @@ const HeroSection = () => {
             {/* Left content */}
             <Box sx={{ flex: 1, color: "#fff", position: "relative" }}>
               {/* top badge */}
-              <Box
-                sx={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: 1.5,
-                  background: "#0F0F0F",
-                  border: "0.5px solid rgba(190,190,190,0.3)",
-                  px: 2,
-                  py: 1,
-                  borderRadius: "999px",
-                  mb: 3,
-                  boxShadow: "0 4px 20px rgba(0,0,0,0.6)",
-                }}
-              >
-                <Box
-                  sx={{
-                    width: 10,
-                    height: 10,
-                    borderRadius: "50%",
-                    background: "#10E585",
-                    boxShadow: "0 0 12px rgba(16,229,133,0.7)",
-                  }}
-                />
-                <Typography sx={{ fontWeight: 600, fontSize: 14 }}>
-                  Available For Work
-                </Typography>
-                <Typography sx={{ color: "rgba(255,255,255,0.6)", ml: 1 }}>
-                  or Ready for Project!
-                </Typography>
-              </Box>
+
+              <OpenToWork />
 
               <Typography
-                sx={{ fontWeight: 300, fontSize: { xs: 20, md: 32 } }}
+                sx={{ marginTop: 2, fontWeight: 300, fontSize: { xs: 20, md: 32 } }}
               >
-                Hi there <span aria-hidden>👋</span> I’m <strong>Rofiq</strong>{" "}
-                from
-                <span aria-hidden> 🇮🇩</span>
+                Olá <span aria-hidden>👋</span> me chamo <strong>Lucas Simão</strong>{" "}
+                de Porto Alegre
+                <span aria-hidden> 🇧🇷</span>
               </Typography>
 
               <Typography
@@ -124,7 +96,8 @@ const HeroSection = () => {
                   lineHeight: 1.05,
                 }}
               >
-                I build accessible, pixel-perfect
+                Desenvolvo
+
                 <br />
                 <Box
                   component="span"
@@ -137,10 +110,10 @@ const HeroSection = () => {
                     fontWeight: 900,
                   }}
                 >
-                  digital experiences
+                  experiências digitais
                 </Box>
                 <br />
-                for the website
+                modernas e funcionais para a web.
               </Typography>
 
               {/* info rows */}
@@ -160,13 +133,13 @@ const HeroSection = () => {
                     />
                     <Box>
                       <Typography sx={{ fontWeight: 700 }}>
-                        Software Engineering Student
+                        Estudante de Engenharia de Software na PUCRS
                       </Typography>
                       <Typography sx={{ color: "rgba(255,255,255,0.7)" }}>
-                        at The State University of Malang
+                        na Pontifícia Universidade Católica do Rio Grande do Sul
                       </Typography>
                       <Typography sx={{ color: "#909090", mt: 1 }}>
-                        2025 - Current
+                        Início: 2024/1 - Previsão: 2027/2
                       </Typography>
                     </Box>
                   </Box>
@@ -187,13 +160,13 @@ const HeroSection = () => {
                     />
                     <Box>
                       <Typography sx={{ fontWeight: 700 }}>
-                        Freelance Web Fullstack Developer
+                        Bolsista no projeto PET-Saúde SUS Digital
                       </Typography>
                       <Typography sx={{ color: "rgba(255,255,255,0.7)" }}>
-                        at Upwork & Waikí Digital
+                        (PUCRS e Ministério da Saúde)
                       </Typography>
                       <Typography sx={{ color: "#909090", mt: 1 }}>
-                        2024 - Now
+                        Início: 2025/2
                       </Typography>
                     </Box>
                   </Box>
@@ -201,8 +174,8 @@ const HeroSection = () => {
               </Box>
 
               <Typography sx={{ color: "#909090", mt: 6, maxWidth: 620 }}>
-                Passionate about building web applications and solving
-                real-world problems through technology and teamwork.
+                Apaixonado por tecnologia e por transformar ideias
+                em soluções reais através do desenvolvimento de software.
               </Typography>
 
               {/* Buttons */}
