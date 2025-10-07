@@ -1,0 +1,1 @@
+// This file is used to manage and export assets such as images and SVGs for easy import throughout the application.

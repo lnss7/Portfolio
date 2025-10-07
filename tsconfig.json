@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src",
+    "src/sections/AboutSection.tsx",
+    "src/sections/CertificatesSection.tsx",
+    "src/sections/ContactSection.tsx",
+    "src/sections/EducationSection.tsx",
+    "src/sections/HeroSection.tsx",
+    "src/sections/LanguagesSection.tsx",
+    "src/sections/ProjectsSection.tsx",
+    "src/sections/SkillsSection.tsx",
+    "src/sections/SoftSkillsSection.tsx"
+  ],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
