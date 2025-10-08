@@ -14,7 +14,7 @@ const OpenToWork: React.FC<Props> = ({
     <ButtonBase
       sx={{
         position: "relative",
-        width: 322,
+        width: 362,
         height: 38,
         borderRadius: 43,
         background: "transparent",
@@ -38,6 +38,17 @@ const OpenToWork: React.FC<Props> = ({
           boxShadow: "0px 0px 11.8px #1BE4F2",
           flex: "none",
           animation: "pulse 2s infinite",
+          "@keyframes pulse": {
+            "0%": {
+              transform: "scale(1)",
+            },
+            "50%": {
+              transform: "scale(1.1)",
+            },
+            "100%": {
+              transform: "scale(1)",
+            },
+          },
         }}
       />
 
@@ -52,8 +63,8 @@ const OpenToWork: React.FC<Props> = ({
         <Typography
           sx={{
             fontFamily: "Plus Jakarta Sans, Roboto, Arial, sans-serif",
-            fontWeight: 600,
-            fontSize: 14,
+            fontWeight: 500,
+            fontSize: 16,
             lineHeight: "18px",
             color: "#FFFFFF",
             whiteSpace: "nowrap",
@@ -65,7 +76,7 @@ const OpenToWork: React.FC<Props> = ({
         <Typography
           sx={{
             fontFamily: "Plus Jakarta Sans, Roboto, Arial, sans-serif",
-            fontWeight: 600,
+            fontWeight: 500,
             fontSize: 14,
             lineHeight: "18px",
             color: "rgba(255,255,255,0.5)",
