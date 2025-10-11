@@ -7,7 +7,7 @@ const AboutSection = () => {
       id="sobre"
       sx={{
         py: 10,
-        background: "linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%)",
+        background: "#060606",
         position: "relative",
       }}
     >
@@ -23,7 +23,7 @@ const AboutSection = () => {
             sx={{
               textAlign: "center",
               mb: 5,
-              color: "#667eea",
+              color: "#5c8cb4",
               fontSize: { xs: "2rem", md: "2.5rem" },
               fontWeight: 700,
               letterSpacing: "-0.01em",
@@ -34,7 +34,7 @@ const AboutSection = () => {
 
           <Box
             sx={{
-              background: "rgba(255, 255, 255, 0.7)",
+              background: "#060606",
               backdropFilter: "blur(20px)",
               borderRadius: "24px",
               border: "1px solid rgba(255, 255, 255, 0.5)",
@@ -46,7 +46,7 @@ const AboutSection = () => {
               variant="body1"
               sx={{
                 mb: 3,
-                color: "#495057",
+                color: "#ffffff",
                 lineHeight: 1.8,
                 fontSize: "1.05rem",
               }}

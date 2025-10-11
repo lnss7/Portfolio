@@ -48,17 +48,13 @@ const HeroSection = () => {
         <Box
           sx={{
             position: "relative",
-            background: "rgba(255, 255, 255, 0.06)",
-            backdropFilter: "blur(12px)",
-            borderRadius: "24px",
-            border: "1px solid rgba(255, 255, 255, 0.08)",
             py: { xs: 10, md: 15 },
             px: { xs: 10, md: 20 },
             maxWidth: "100%",
             width: "100%",
             mx: "auto",
             minHeight: { xs: 300, md: 400 },
-            maxHeight: { xs: 800, md: 1000 },
+            maxHeight: { xs: 600, md: 800 },
             boxShadow: "0 8px 32px rgba(0, 0, 0, 0.6)",
             overflow: "hidden",
             display: "flex",
@@ -184,7 +180,7 @@ const HeroSection = () => {
                     href={btn.href}
                     sx={{
                       background: "rgba(255, 255, 255, 0.95)",
-                      color: "#667eea",
+                      color: "#17334d",
                       borderRadius: "50px",
                       px: 3,
                       py: 1.2,
@@ -206,7 +202,6 @@ const HeroSection = () => {
             </Box>
           </Box>
 
-          {/* Right decorative object (placeholder). In the design it's an abstract 3D shape. We'll place an SVG/placeholder with reduced opacity */}
           <Box
             sx={{
               width: 448,
@@ -216,25 +211,75 @@ const HeroSection = () => {
               position: "relative",
             }}
           >
-            <Box
-              sx={{
+
+            <motion.div
+              initial={{ y: 0 }}
+              animate={{ y: [0, -6, 0] }}
+              transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
+              style={{
                 position: "absolute",
                 right: -40,
                 top: 24,
                 width: 448,
                 height: 443,
-                opacity: 0.4,
-                backgroundImage:
-                  "radial-gradient(circle at 20% 20%, rgba(255,255,255,0.06), rgba(255,255,255,0))",
-                borderRadius: "50%",
-                border: "1px solid rgba(255,255,255,0.02)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                pointerEvents: "none",
               }}
-            />
+            >
+              <Box
+                sx={{
+                  width: "100%",
+                  height: "100%",
+                  borderRadius: "50%",
+                  overflow: "hidden",
+                  position: "relative",
+                }}
+              >
+                <Box
+                  component="img"
+                  src="/img/foto_perfil.png"
+                  alt="decorative shape"
+                  sx={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    display: "block",
+                  }}
+                />
+
+                <Box
+                  sx={{
+                    position: "absolute",
+                    inset: 0,
+                    borderRadius: "50%",
+                    opacity: 0.4,
+                    backgroundImage:
+                      "radial-gradient(circle at 20% 20%, rgba(255,255,255,0.06), rgba(255,255,255,0))",
+                    border: "none",
+                  }}
+                />
+                
+                <Box
+                  component="svg"
+                  viewBox="0 0 448 443"
+                  preserveAspectRatio="xMidYMid meet"
+                  sx={{
+                    position: "absolute",
+                    inset: 0,
+                    width: "100%",
+                    height: "100%",
+                    pointerEvents: "none",
+                  }}
+                >
+                </Box>
+              </Box>
+            </motion.div>
           </Box>
         </Box>
       </motion.div>
     </Box>
   );
 };
-
 export default HeroSection;
